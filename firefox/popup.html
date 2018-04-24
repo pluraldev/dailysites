@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Daily Websites</title>
+</head>
+
+<body>
+  <div class="info">
+    <a href="https://www.pluraldev.com" target="_blank" title="Developer Home Page">
+      <img src="images/home.png">
+    </a>
+    <a href="https://github.com/pluraldev/dailysites" target="_blank" title="Github" class="github">
+      <img src="images/github.png">
+    </a>
+  </div>
+  <div class="modal modal-rename">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Rename Site</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="field">
+          <div class="control">
+            <input type="text" id="title" class="input">
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button id="save-title" class="button is-success">Save changes</button>
+        <button class="button">Cancel</button>
+      </footer>
+    </div>
+  </div>
+
+  <div class="modal modal-alert">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Atention!</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <h2 class="is-size-4 has-text-danger">Site already added.</h2>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button">Ok</button>
+      </footer>
+    </div>
+  </div>
+
+  <section class="section">
+    <h1 class="title">Daily Sites</h1>
+    <div class="field is-grouped">
+      <p class="control">
+        <button id="add-current" class="button">Add Current</button>
+      </p>
+      <p class="control">
+        <button id="open-selected" class="button is-primary">Open Selected</button>
+      </p>
+      <p class="control">
+        <button id="open-all" class="button is-primary">Open All</button>
+      </p>
+    </div>
+    <div class="container">
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input type="text" id="url" class="input" placeholder="e.g. https://example.com ">
+        </div>
+        <div class="control">
+          <button id="add" class="button">Add</button>
+        </div>
+      </div>
+      <ul id="daily-sites"></ul>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

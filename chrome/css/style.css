@@ -1,0 +1,91 @@
+body {
+  width: 680px;
+  color: #777;
+}
+
+ul {
+  padding-right: 15px;
+}
+
+li{
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+li:hover{
+  background-color: #eee;
+}
+
+li button {
+  float: right;
+  margin-left: 5px;
+}
+
+li img {
+  margin: 0 5px;
+}
+
+.info {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+}
+
+.info img {
+  width: 1.8rem;
+}
+
+.checkbox-container {
+  float: right;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.checkbox-container input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 27px;
+  width: 27px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #00b89c;
+  border: none;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 11px;
+  top: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-card{
+  width: 450px;
+}

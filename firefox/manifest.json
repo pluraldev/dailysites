@@ -1,0 +1,21 @@
+{
+  "name": "Daily Sites",
+  "description": "Daily Sites provides a convenient way to group daily-use sites into a list allowing you to open them all with just one click.",
+  "version": "1.0.7",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon.png"
+  },
+	"icons": { 
+    "128": "images/icon128.png" 
+  },  
+  "permissions": [
+    "storage", "tabs", "<all_urls>"
+  ],
+  "applications": {
+  "gecko": {
+    "id": "dailysites@pluraldev.com"
+  }
+}  
+}
